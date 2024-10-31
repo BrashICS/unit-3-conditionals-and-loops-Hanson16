@@ -1,29 +1,6 @@
-/**
- * Unit 3 - Conditionals and Loops
- * ICS3 - Mr. Brash 🐿️
- * 
- * For this unit, Mr. Brash is trying something different. Each lesson will
- * be in this one repository, separated in the Lessons folder.
- * 
- * If you run into Git or Github issues, call Mr. Brash over.
- **/ 
+// 🎃 Start The Spooky Adventure Game 🎃 
 
-
-'use strict';
-
-/*** Event Listeners ***/
-
-
-
-/*** Functions ***/
-
-// A very accurate rounding function
-function round(value, decimals) {
-    let multiplier = 10**decimals;
-    return Math.round((value + Number.EPSILON) * multiplier) / multiplier;
-}
-
-// Get a random number from min to max
-function randInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+function startGame() {
+    let player Name = prompt("What is your name, bravesoul?");
+    alert("Welcome, : + playername + ", to Haunted St. Matthew Hs!");
+        let pathchoice =prompt ("Do you want to go into the (1) liabary or (2) basemant?");
