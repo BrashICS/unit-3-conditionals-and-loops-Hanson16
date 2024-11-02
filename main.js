@@ -53,7 +53,7 @@ function basement() {
     }
 }
 
-// Additional path: Auto Shop
+
 function autoShop() {
     let autoShopChoice = prompt("In the auto shop, you see an ancient toolbox. Do you (1) open the toolbox or (2) ignore it and keep exploring?");
     
@@ -68,10 +68,10 @@ function autoShop() {
     endGame();
 }
 
-// Function to end the game
+
 function endGame() {
     alert("The End. Thanks for playing!");
 }
 
-// Start the game
+
 startGame();
