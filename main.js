@@ -8,10 +8,10 @@ function startGame() {
     
     alert("Welcome, " + playerName + ", to Haunted St. Matthew HS!");
 
-    // First decision: Choose a path
+    
     let pathChoice = prompt("Do you want to go into the (1) library or (2) basement?");
     
-    // Call the appropriate function based on player choice
+    
     if (pathChoice === "1") {
         library();
     } else if (pathChoice === "2") {
@@ -22,7 +22,7 @@ function startGame() {
     }
 }
 
-// Function for the Library path
+
 function library() {
     let libraryChoice = prompt("You see a creepy old book on a dusty table. Do you (1) open it or (2) leave it alone?");
     
@@ -37,7 +37,7 @@ function library() {
     endGame();
 }
 
-// Function for the Basement path
+
 function basement() {
     let basementChoice = prompt("You hear strange noises. Do you (1) investigate or (2) run away?");
     
