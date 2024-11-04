@@ -5,8 +5,8 @@
 
 /* Using font-size: larger to make things pop. Feel free to change. */
 body {
-    background-color:#36013F;
-    color: white;
+    background-color:#e9680d;
+    color: rgb(8, 99, 2);
     margin: 30px;
     font-size: x-large;
 }
