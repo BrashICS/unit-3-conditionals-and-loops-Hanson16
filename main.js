@@ -1,29 +1,35 @@
-/**
- * Unit 3 - Conditionals and Loops
- * ICS3 - Mr. Brash 🐿️
- * 
- * For this unit, Mr. Brash is trying something different. Each lesson will
- * be in this one repository, separated in the Lessons folder.
- * 
- * If you run into Git or Github issues, call Mr. Brash over.
- **/ 
+let sum = 0, num = 0;
 
+do {
 
-'use strict';
+    // add all positive numbers
+    sum += num;
 
-/*** Event Listeners ***/
+    // take input from the user
+    num = parseInt(prompt("Enter a number: "));
 
+    // loop terminates if num is negative
+} while (num >= 0);
 
+// last, display sum
+console.log(`The sum is ${sum}`);
 
-/*** Functions ***/
+function play() {
+  var dice = -1;
+  var rolls = 1;
+  var numb1 = 2;
+  var numb2 = 3;
+  var numb3 = 6;
+  var numb4 = 12;
+  while (![numb1, numb2, numb3, numb4].includes(dice)) {
+    dice = Math.floor(Math.random() * 11) + 2;
+    rolls++;
 
-// A very accurate rounding function
-function round(value, decimals) {
-    let multiplier = 10**decimals;
-    return Math.round((value + Number.EPSILON) * multiplier) / multiplier;
+  }
+
+  document.getElementById('results').innerHTML = 'Your dice landed on: ' + dice;
+  document.getElementById('rolls').innerHTML = 'Rolls: ' + rolls;
+
 }
 
-// Get a random number from min to max
-function randInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+play()
